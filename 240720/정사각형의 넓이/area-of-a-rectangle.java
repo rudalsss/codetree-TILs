@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        int n = x*x;
+        int n = sc.nextInt();
+        int x = n*n;
 
-        System.out.println(n);
-        if(n<5){
+        System.out.println(x);
+        if(x<5){
             System.out.println("tiny");
         }
     }
