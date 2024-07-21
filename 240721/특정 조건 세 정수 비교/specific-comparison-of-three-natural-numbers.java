@@ -10,8 +10,8 @@ public class Main {
         int c = sc.nextInt();
 
         int min = a;
-        if(min<b) min=b;
-        if(min<c) min=c;
+        if(min>b) min=b;
+        if(min>c) min=c;
 
         System.out.print(a==min?1:0);
         System.out.print(' ');
