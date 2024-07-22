@@ -1,12 +1,17 @@
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Main {
-    public static boolean check(String str){
-        for(int i=0; i<str.length(); i++){
-            if( str.charAt(i) != str.charAt(i+1) ) return true;
+    public static boolean check(String str) {
+        Set<Character> characters = new HashSet<>();
+        for (char c : str.toCharArray()) {
+            characters.add(c);
         }
-        return false;
+        return characters.size() >= 2;
     }
+
+
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
