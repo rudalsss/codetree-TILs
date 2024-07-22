@@ -12,6 +12,8 @@ public class Main {
 
         if((a2=='M'&&a>=19) || (b2=='M'&&b>=19)){
             System.out.println(1);
+        } else {
+            System.out.println(1);
         }
     }
 }
