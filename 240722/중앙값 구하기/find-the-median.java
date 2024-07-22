@@ -9,11 +9,22 @@ public class Main {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        int mid = a;
+        int mid;
 
-        if((b<=mid&&c<=b)||(b>=mid&&b<=c)) mid = b;
-        if((c<=mid&&a<=c)||(c>=mid&&c<=a)) mid = c;
+        // a가 중앙값일 경우
+        if ((a >= b && a <= c) || (a >= c && a <= b)) {
+            mid = a;
+        }
+        // b가 중앙값일 경우
+        else if ((b >= a && b <= c) || (b >= c && b <= a)) {
+            mid = b;
+        }
+        // c가 중앙값일 경우
+        else {
+            mid = c;
+        }
 
+        // 중앙값을 출력합니다.
         System.out.println(mid);
     }
 }
