@@ -5,8 +5,7 @@ public class Main {
         // 스캐너 객체를 생성하여 사용자 입력을 받습니다.
         Scanner sc = new Scanner(System.in);
         
-        // 사용자로부터 월을 입력받습니다.
-        System.out.print("월을 입력하세요 (1-12): ");
+    
         int month = sc.nextInt();
 
         // 각 달의 일수를 저장하는 배열을 정의합니다.
