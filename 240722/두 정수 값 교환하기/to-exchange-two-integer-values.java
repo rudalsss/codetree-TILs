@@ -6,7 +6,7 @@ public class Main {
         int temp = n;
         n = m;
         m = temp;
-        return new int[]{n, m};
+        return new int[]{m, n};
     }
 
     public static void main(String[] args) {
