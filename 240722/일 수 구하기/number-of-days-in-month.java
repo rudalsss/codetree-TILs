@@ -7,7 +7,13 @@ public class Main {
 
         int a = sc.nextInt();
         if(a%2==0){
-            System.out.println(a==2?28:30);
+            if(a==2){
+                System.out.println(28);
+            } else if(a==8){
+                System.out.println(31);
+            } else {
+                System.out.println(30);
+            }
         } else {
             System.out.println(31);
         }
