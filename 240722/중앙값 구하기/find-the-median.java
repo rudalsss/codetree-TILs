@@ -11,8 +11,8 @@ public class Main {
 
         int mid = a;
 
-        if((b<mid&&c<b)||(b>mid&&b<c)) mid = b;
-        if((c<mid&&a<c)||(c>mid&&c<a)) mid = c;
+        if((b<=mid&&c<=b)||(b>=mid&&b<=c)) mid = b;
+        if((c<=mid&&a<=c)||(c>=mid&&c<=a)) mid = c;
 
         System.out.println(mid);
     }
