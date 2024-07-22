@@ -10,7 +10,7 @@ public class Main {
         int b = sc.nextInt();
         char b2 = sc.next().charAt(0);
 
-        if((a2=='M'||b2=='M') && (a>=19||b>=19)){
+        if((a2=='M'&&a>=19) || (b2=='M'&&b>=19)){
             System.out.println(1);
         }
     }
