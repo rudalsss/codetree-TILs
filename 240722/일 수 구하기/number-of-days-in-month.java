@@ -24,14 +24,8 @@ public class Main {
             31  // 12월
         };
 
-        // 입력된 월이 유효한지 확인하고 해당 월의 일 수를 출력합니다.
-        if (month >= 1 && month <= 12) {
-            System.out.println(month + "월은 " + daysInMonth[month - 1] + "일 까지 있습니다.");
-        } else {
-            System.out.println("잘못된 월을 입력하셨습니다. 1부터 12 사이의 값을 입력하세요.");
-        }
+        System.out.println(daysInMonth[month - 1]);
 
-        // 스캐너 객체를 닫습니다.
-        sc.close();
+        
     }
 }
