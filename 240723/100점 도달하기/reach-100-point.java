@@ -21,7 +21,7 @@ public class Main {
 
         int a = sc.nextInt();
 
-        while(a<=100){
+        while(a<100){
             score(a);
             a++;
         }
