@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static boolean chk(int n){
         if( n%2!=0 && n%10!=5 ){
-            if( n%3!=0 || ( n%3==0 && n%9!=0 ) ){
+            if( n%3 !=0 || ( n%3==0 && n%9==0 ) ){
                 return true;
             }
             return false;
