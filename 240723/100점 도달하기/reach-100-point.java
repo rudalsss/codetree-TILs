@@ -11,7 +11,7 @@ public class Main {
         } else if(a>=60){
             System.out.print("D ");
         } else {
-            System.out.print("F");
+            System.out.print("F ");
         }
     }
 
@@ -21,7 +21,7 @@ public class Main {
 
         int a = sc.nextInt();
 
-        while(a<100){
+        while(a<=100){
             score(a);
             a++;
         }
