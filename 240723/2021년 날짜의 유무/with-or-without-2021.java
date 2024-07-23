@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static boolean chk(int a, int b){
         int[] days = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-        if( b<=days[a+1] ){
+        if( b<=days[a-1] ){
             return true;
         }else {
             return false;
