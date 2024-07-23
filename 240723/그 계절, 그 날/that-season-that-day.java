@@ -11,7 +11,7 @@ public class Main {
             if(b>=3&&b<=5){
                 System.out.println("Spring");
             } else if (b>=6 && b<=8){
-                System.out.println("Summmer");
+                System.out.println("Summer");
             } else if(b>=9 && b<=11){
                 System.out.println("Fall");
             } else {
