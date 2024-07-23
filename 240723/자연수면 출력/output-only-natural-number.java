@@ -10,6 +10,8 @@ public class Main {
 
         if(a>0){
             for(int i=0; i<b; i++) System.out.print(a);
+        } else {
+            System.out.println(0);
         }
     }
 }
