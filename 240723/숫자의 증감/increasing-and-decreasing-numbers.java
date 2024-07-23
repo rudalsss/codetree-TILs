@@ -12,6 +12,8 @@ public class Main {
             for(int i=1; i<=b; i++) System.out.print(i+" ");
         } else if(a=='D'){
             for(int i=b; i<=1; i--) System.out.print(i+" ");
+        } else {
+            System.out.println("No");
         }
     }
 }
