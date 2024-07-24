@@ -3,10 +3,11 @@ import java.util.Scanner;
 public class Main {
     public static boolean chk(int n){
         while(n>0){
-            n /= 10;
             if( n%10 == 3 || n%10 == 6 || n%10 == 9 ){
                 return true;
             }
+            n /= 10;
+            
         }
         return false;
     }
