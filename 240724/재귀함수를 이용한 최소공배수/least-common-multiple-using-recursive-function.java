@@ -12,7 +12,7 @@ public class Main {
 
     public static int nlcm(int[] arr, int n){
         if(n==1) return arr[1];
-        return lcm(nlcm(lcm(n-1), arr[n]));
+        return lcm( nlcm(arr, n-1), arr[n] );
     }
 
     public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        int result = nlcm(arr, n);
+        int result = nlcm(arr, n-1);
         System.out.println(result);
     }
 }
