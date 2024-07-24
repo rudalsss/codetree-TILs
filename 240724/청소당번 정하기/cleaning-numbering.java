@@ -8,8 +8,8 @@ public class Main {
         int a = sc.nextInt();
 
         int d = a/12;
-        int b = a/2 - 1 -d;
-        int c = a/3 - d;
+        int b = a/2 -d -a/6;
+        int c = a/3 -d;
         System.out.print(b+" "+c+" "+d);
     }
 }
