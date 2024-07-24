@@ -15,7 +15,9 @@ public class Main {
             } else {
                 a*=2;
             }
-            System.out.print(a+" ");
+            if (a <= b) {
+                System.out.print(a + " ");
+            }
         }
     }
 }
