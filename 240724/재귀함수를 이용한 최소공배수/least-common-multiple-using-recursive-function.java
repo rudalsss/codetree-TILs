@@ -10,9 +10,9 @@ public class Main {
         return a*b/gcd(a,b);
     }
 
-    public static int nlcm(int[] arr, int n){
-        if(n==1) return arr[0];
-        return lcm(arr[n-1], nlcm(arr, n-1));
+    public static int nlcm(int n){
+        if(n==1) return arr[1];
+        return lcm(nlcm(lcm(n-1), arr[n]));
     }
 
     public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        int result = nlcm(arr, n);
+        int result = nlcm(n);
         System.out.println(result);
     }
 }
