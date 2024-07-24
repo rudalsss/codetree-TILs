@@ -2,16 +2,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
 
         int a = sc.nextInt();
 
-        
-        int d = a/12;
-        int c = a/3 -a/12;
-        int b = a/2 -a/6 -a/12;
+        int restroomCleanCount = a / 12; // 12일 주기로 청소하는 횟수
+        int hallwayCleanCount = (a / 3) - restroomCleanCount; // 3일 주기로 청소하는 횟수에서 12일 주기 겹침 제외
+        int classroomCleanCount = (a / 2) - (a / 6) - restroomCleanCount; // 2일 주기로 청소하는 횟수에서 6일 주기와 12일 주기 겹침 제외
 
-        System.out.print(b+" "+c+" "+d);
+        System.out.print(classroomCleanCount + " " + hallwayCleanCount + " " + restroomCleanCount);
     }
 }
