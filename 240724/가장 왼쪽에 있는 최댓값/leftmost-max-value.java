@@ -12,28 +12,20 @@ public class Main {
             arr[i] = sc.nextInt();
         }
 
-        int max = arr[0];
-        int maxIdx = 0;
-        for(int i=0; i<a; i++){
-            if(arr[i]>=max) {
-                max = arr[i];
-                maxIdx = i-1;
-            }
-        }
-    
-        System.out.print(maxIdx+" ");
-
-        for(int i=0; i<maxIdx; i++){
-            if(arr[i]>=max) {
-                max = arr[i];
-                maxIdx = i-1;
-            }
-            if(maxIdx==1) break;
-        }
         
-        System.out.print(maxIdx+" ");
+        int maxIdx = a;
+
+        while(maxIdx != 0){
+            int max = 0;
+            for(int i=0; i<a; i++){
+                if(arr[i]>max) {
+                    max = arr[i];
+                    maxIdx = i;
+                }
+            }
+            a = maxIdx;
+            System.out.print((maxIdx+1)+" "); 
+        }
     
-
-
     }
 }
