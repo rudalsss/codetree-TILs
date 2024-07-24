@@ -8,9 +8,11 @@ public class Main {
         int a = sc.nextInt();
         int cnt = 1;
 
-        while(a>1){
-            a /= cnt;
+        while(true){
             cnt++;
+            a /= cnt;
+            
+            if(a<=1) break;
         }
         System.out.println(cnt);
     }
