@@ -14,6 +14,11 @@ public class Main {
 
         Arrays.sort(c1);
         Arrays.sort(c2);
+        
+        if(c1.length != c2.length){
+            System.out.println("No");
+            return;
+        }
 
         for(int i=0; i<c1.length; i++){
             if(c1[i] == c2[i]){
