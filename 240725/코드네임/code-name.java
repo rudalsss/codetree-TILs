@@ -8,16 +8,18 @@ public class Main {
         
 
         A arr[] = new A[5];
+        int idx = 0;
         int score = 100;
         for(int i=0; i<5; i++){
             char a = sc.next().charAt(0);
             int b = sc.nextInt();
             arr[i] = new A(a,b);
             if(arr[i].score<score){
-                score = arr[i].score;
-                System.out.print(arr[i]);
+                score = arr[idx].score;
             }
         }
+
+        System.out.println(arr[idx]);
 
     }
 }
