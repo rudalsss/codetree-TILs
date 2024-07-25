@@ -25,7 +25,7 @@ public class Main {
                 continue;
             } else {
                 System.out.print("No");
-                break;
+                return;
             }
         }
         System.out.print("Yes");
