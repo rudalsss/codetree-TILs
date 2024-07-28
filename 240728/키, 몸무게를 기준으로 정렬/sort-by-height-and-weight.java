@@ -24,7 +24,7 @@ public class Main {
             }
         });
 
-        for(int i=0; i<5; i++){
+        for(int i=0; i<a; i++){
             System.out.println(arr[i]);
         }
 
