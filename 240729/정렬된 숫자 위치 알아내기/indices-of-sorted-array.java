@@ -17,23 +17,15 @@ public class Main {
         Arrays.sort(sortedArr);
 
         int[] answer = new int[n];
-        for(int i=0; i<n; i++){
-            for(int j=0; j<n; j++){
-                if(arr[i]==sortedArr[j]){
-                    answer[i] = j+1;
-                }
-            }
-        }
+        boolean[] used = new boolean[n];
 
-        int cnt = 0;
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
-                if( i!=j && answer[i] == answer[j]) cnt++;
-            }
-        }
-        for(int i=0; i<n; i++){
-            for(int j=0; j<n; j++){
-                if( i!=j && answer[i] == answer[j]) answer[i] = answer[i]-cnt+1;
+                if(arr[i]==sortedArr[j] && used[j]==false ){
+                    answer[i] = j+1;
+                    used[j] = true;
+                    break;
+                }
             }
         }
 
