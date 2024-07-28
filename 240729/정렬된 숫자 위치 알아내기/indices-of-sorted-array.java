@@ -25,11 +25,15 @@ public class Main {
             }
         }
 
+        int cnt = 0;
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
-                if( i!=j && answer[i] == answer[j]) {
-                    answer[i] -= 1;
-                }
+                if( i!=j && answer[i] == answer[j]) cnt++;
+            }
+        }
+        for(int i=0; i<n; i++){
+            for(int j=0; j<n; j++){
+                if( i!=j && answer[i] == answer[j]) answer[i] = answer[i]-cnt+1;
             }
         }
 
