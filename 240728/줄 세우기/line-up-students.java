@@ -9,10 +9,10 @@ public class Main {
         int a = sc.nextInt();
         Student[] students = new Student[a];
         for(int i=0; i<a; i++){
-            int score1 = sc.nextInt();
-            int score2 = sc.nextInt();
+            int h = sc.nextInt();
+            int w = sc.nextInt();
 
-            students[i] = new Student(i+1, score1, score2);
+            students[i] = new Student(i+1, h, w);
         }
 
         Arrays.sort(students);
@@ -41,7 +41,7 @@ class Student implements Comparable<Student>{
     public int compareTo(Student other){
         if(this.h != other.h){
             return other.h-this.h;
-        } else if (this.w != this.w){
+        } else if (this.w != other.w){
             return other.w-this.w;
         } else {
             return this.num-other.num;
