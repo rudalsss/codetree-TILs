@@ -15,10 +15,10 @@ public class Main {
         int sum1 = 0;
         int sum2 = 0;
 
-        for(int i=0; i<=a;i++) sum1 += days[i];
+        for(int i=0; i<a;i++) sum1 += days[i];
         sum1 += b;
 
-        for(int i=0; i<=c; i++) sum2 += days[i];
+        for(int i=0; i<c; i++) sum2 += days[i];
         sum2 += d;
 
         System.out.println(sum2-sum1);
