@@ -21,7 +21,7 @@ public class Main {
         for(int i=0; i<c; i++) sum2 += days[i];
         sum2 += d;
 
-        System.out.println(sum2-sum1);
+        System.out.println(sum2-sum1+1);
 
         
 
