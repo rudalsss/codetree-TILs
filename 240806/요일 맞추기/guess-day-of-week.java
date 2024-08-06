@@ -28,7 +28,7 @@ public class Main {
 
         if(result<7){
             idx = result;
-        } esle {
+        } else {
             while(result>=7){
                 idx = result % 7;
                 result /= 7; 
