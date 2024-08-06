@@ -18,7 +18,7 @@ public class Main {
         //연산대상 요일찾기
         int idx = 0;
         for (int i = 0; i < dates.length; i++) {
-            if (dates[i] == date) {
+            if (dates[i].equals(date)) {
                 idx = i;
             }
         }
