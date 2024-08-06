@@ -24,16 +24,7 @@ public class Main {
         int totaldays = sumdays2 - sumdays1 ;
         int result = totaldays<0 ? totaldays*-1 : totaldays;
         
-        int idx = 0;
-
-        if(result<7){
-            idx = result;
-        } else {
-            while(result>=7){
-                idx = result % 7;
-                result /= 7; 
-            }
-        }
+        int idx = result % 7;
 
         if(totaldays==0){
             System.out.println(dates[0]);
