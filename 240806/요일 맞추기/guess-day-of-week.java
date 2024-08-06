@@ -22,7 +22,7 @@ public class Main {
         sumdays2 += d;
 
         int totaldays = sumdays2 - sumdays1 ;
-        int result = totaldays<0 ? totaldays*-1 : totaldays+1;
+        int result = totaldays<0 ? totaldays*-1 : totaldays;
         
         int idx = 0;
         while(result>=7){
