@@ -25,9 +25,14 @@ public class Main {
         int result = totaldays<0 ? totaldays*-1 : totaldays;
         
         int idx = 0;
-        while(result>7){
-           idx = result % 7;
-           result /= 7; 
+
+        if(result<7){
+            idx = result;
+        } esle {
+            while(result>=7){
+                idx = result % 7;
+                result /= 7; 
+            }
         }
 
         if(totaldays==0){
