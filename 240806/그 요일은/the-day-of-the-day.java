@@ -23,6 +23,11 @@ public class Main {
             }
         }
 
+        if( a==c && (d-b)<idx ){
+            System.out.println(0);
+            return;
+        }
+
         int sumdays1 =0, sumdays2 = 0;
 
         for(int i=0; i<a; i++) sumdays1 += days[i];
