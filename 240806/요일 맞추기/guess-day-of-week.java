@@ -30,7 +30,7 @@ public class Main {
            result /= 7; 
         }
 
-        if(result==0){
+        if(totaldays==0){
             System.out.println(dates[0]);
         } else {
             String date = totaldays<0? dates[6-idx] : dates[idx];
