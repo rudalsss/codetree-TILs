@@ -21,7 +21,7 @@ public class Main {
         for(int i=0; i<c; i++) sumdays2 += days[i];
         sumdays2 += d;
 
-        int totaldays = sumdays2 - sumdays1;
+        int totaldays = sumdays2 - sumdays1 ;
         int result = totaldays<0 ? totaldays*-1 : totaldays+1;
         
         int idx = 0;
