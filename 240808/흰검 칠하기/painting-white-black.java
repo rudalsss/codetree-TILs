@@ -22,19 +22,20 @@ public class Main {
         for(int i=0; i<n; i++){
             if(dir[i]=='R'){
                 for(int j=0; j<size[i]; j++){
-                    if(color[index]=='g') break;
-                    color[index] = 'b';
-                    black[index]++;
+                    if(color[index] !='g') {
+                        color[index] = 'b';
+                        black[index]++;
+                    }
                     if(black[index]==2 && white[index]==2) color[index]='g';
                     index++;
                 }
-                index--;
+                index--; //마지막 위치조정
             } else {
                 for(int j=0; j<size[i]; j++){
-                    
-                    if(color[index]=='g') break;
-                    color[index] = 'w';
-                    white[index]++;
+                    if(color[index]!='g'){
+                        color[index] = 'w';
+                        white[index]++;
+                    }
                     if(black[index]==2 && white[index]==2) color[index]='g';
                     index--;
                 }
