@@ -30,11 +30,12 @@ public class Main {
                 }
             } else {
                 for(int j=0; j<size[i]; j++){
-                    index--;
+                    
                     if(color[index]=='g') break;
                     color[index] = 'w';
                     white[index]++;
                     if(black[index]==2 && white[index]==2) color[index]='g';
+                    index--;
                 }
             }
             
