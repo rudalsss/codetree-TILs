@@ -37,6 +37,7 @@ public class Main {
                     if(black[index]==2 && white[index]==2) color[index]='g';
                 }
             }
+            
         }
 
         int whiteCnt = 0;
