@@ -27,6 +27,7 @@ public class Main {
                 for(int j=0; j<size[i]; j++){
                     start--;
                     arr[start]++;
+                    
                 }
             }
         }
