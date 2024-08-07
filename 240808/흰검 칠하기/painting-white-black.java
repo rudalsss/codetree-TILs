@@ -26,7 +26,7 @@ public class Main {
                         color[index] = 'b';
                         black[index]++;
                     }
-                    if(black[index]==2 && white[index]==2) color[index]='g';
+                    if(black[index]>=2 && white[index]>=2) color[index]='g';
                     index++;
                 }
                 index--; //마지막 위치조정
@@ -36,7 +36,7 @@ public class Main {
                         color[index] = 'w';
                         white[index]++;
                     }
-                    if(black[index]==2 && white[index]==2) color[index]='g';
+                    if(black[index]>=2 && white[index]>=2) color[index]='g';
                     index--;
                 }
                 index++;
