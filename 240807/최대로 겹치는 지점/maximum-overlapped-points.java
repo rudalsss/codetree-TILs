@@ -13,7 +13,7 @@ public class Main {
         for(int i=0; i<n; i++){
             int a = sc.nextInt();
             int b = sc.nextInt();
-            for(int j=a; j<=b; j++) arr[j]++;
+            for(int j=a-1; j<b; j++) arr[j]++;
         }
 
         int max = arr[0];
