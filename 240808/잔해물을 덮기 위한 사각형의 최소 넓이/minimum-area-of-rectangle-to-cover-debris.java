@@ -49,7 +49,6 @@ public class Main {
 
         //두점을 가린경우 -> 새로만들어진 작은 사각형
         if(cnt==2){
-            System.out.println('d');
             int minx = 1999;
             int miny = 1999;
             int maxx = 0;
@@ -60,7 +59,7 @@ public class Main {
                     if( cord[i][j]==1 && i<=minx ) minx=i;
                     if( cord[i][j]==1 && j<=miny ) miny=j;
                     if( cord[i][j]==1 && i>=maxx ) maxx=i;
-                    if( cord[i][j]==1 && j>=minx ) miny=j;                
+                    if( cord[i][j]==1 && j>=maxy ) maxy=j;                
                 }
             }
             
