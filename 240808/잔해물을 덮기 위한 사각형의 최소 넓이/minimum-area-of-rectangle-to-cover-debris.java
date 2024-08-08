@@ -62,6 +62,8 @@ public class Main {
                     if( cord[i][j]==1 && j>=maxy ) maxy=j;                
                 }
             }
+
+            System.out.println(minx+" "+miny+" "+maxx+" "maxy);
             
             for(int i=minx; i<maxx; i++){
                 for(int j=miny; j<maxy; j++){
