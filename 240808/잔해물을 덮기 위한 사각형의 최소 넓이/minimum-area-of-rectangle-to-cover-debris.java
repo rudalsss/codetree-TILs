@@ -63,7 +63,7 @@ public class Main {
                 }
             }
 
-            //System.out.println(minx+" "+miny+" "+maxx+" "maxy);
+            System.out.println(minx+" "+miny+" "+maxx+" "+maxy);
             
             for(int i=minx; i<maxx; i++){
                 for(int j=miny; j<maxy; j++){
