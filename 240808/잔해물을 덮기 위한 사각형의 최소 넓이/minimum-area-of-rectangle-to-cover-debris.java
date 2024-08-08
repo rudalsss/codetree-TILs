@@ -38,8 +38,8 @@ public class Main {
             if(color[i]==3) cnt++;
         } 
 
-        //한점만 가린경우 -> 원래 직사각형
-        if(cnt==1){
+        //한점만 가린경우, 겹치지 않는경우 -> 원래 직사각형
+        if(cnt==1 || cnt==0){
             for(int i=x1[0]; i<x2[0]; i++){
                 for(int j=y1[0]; j<y2[0]; j++){
                     cord[i][j] = 4;
