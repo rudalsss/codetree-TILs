@@ -9,8 +9,8 @@ public class Main {
         int x[] = new int[n];
         int y[] = new int[n];
         for(int i=0; i<n; i++){
-            x[i] = sc.nextInt();
-            y[i] = sc.nextInt();
+            x[i] = sc.nextInt()+100;
+            y[i] = sc.nextInt()+100;
         }
 
         int[][] cord = new int[200][200];
