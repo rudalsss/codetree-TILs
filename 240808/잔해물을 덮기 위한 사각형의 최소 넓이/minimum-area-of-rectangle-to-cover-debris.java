@@ -58,10 +58,12 @@ public class Main {
                 for(int j=0; j<2000; j++){
                     if( cord[i][j]==1 && i<minx ) minx=i;
                     if( cord[i][j]==1 && j<miny ) miny=j;
-                    if( cord[i][j]==1 && i>maxx ) maxx=i+1;
-                    if( cord[i][j]==1 && j>maxy ) maxy=j+1;                
+                    if( cord[i][j]==1 && i>maxx ) maxx=i;
+                    if( cord[i][j]==1 && j>maxy ) maxy=j;                
                 }
             }
+            maxx++;
+            maxy++;
             //System.out.println(minx+" "+miny+" "+maxx+" "+maxy);
             
             for(int i=minx; i<maxx; i++){
