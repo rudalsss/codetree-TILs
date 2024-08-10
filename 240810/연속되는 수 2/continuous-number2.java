@@ -15,7 +15,7 @@ public class Main {
             if(i==0 || num[i]==num[i-1]){
                 cnt++;
             }
-            if(cnt>max) max = cnt;
+            if(cnt>=max) max = cnt;
         }
 
         System.out.println(max);
