@@ -14,6 +14,8 @@ public class Main {
         for(int i=0; i<n; i++){
             if(i==0 || num[i]==num[i-1]){
                 cnt++;
+            } else {
+                cnt = 1;
             }
             if(cnt>=max) max = cnt;
         }
