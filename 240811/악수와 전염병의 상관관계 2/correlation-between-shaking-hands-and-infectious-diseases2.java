@@ -11,7 +11,7 @@ public class Main {
         int T = sc.nextInt(); //진행 횟수
 
         int[] infected = new int[N]; //감염여부
-        for(int i=0; i<N; i++) infected[K-1] = 1;
+        for(int i=0; i<N; i++) infected[P-1] = 1;
         int[] con = new int[N];      //전염횟수
 
         //입력값 받기
@@ -31,12 +31,12 @@ public class Main {
             int x = inputs[i][1];
             int y = inputs[i][2];
             //x가 감염자일때 -> x의 전염횟수 증가, y가 전염자됨
-            if(infected[x-1]==1 && con[x-1] <= K){
+            if(infected[x-1]==1 && con[x-1] < K){
                 con[x-1]++;
                 infected[y-1]=1;
             }
             //y가 감염자일때 -> y의 전염횟수 증가, x가 전염자됨
-            if(infected[y-1]==1 && con[y-1] <= K){
+            if(infected[y-1]==1 && con[y-1] < K){
                 con[y-1]++;
                 infected[x-1]=1;
             }
