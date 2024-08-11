@@ -28,17 +28,17 @@ public class Main {
 
         
         for(int i=0; i<T; i++){
-            int x = inputs[i][1];
-            int y = inputs[i][2];
+            int x = inputs[i][1]-1;
+            int y = inputs[i][2]-1;
             //x가 감염자일때 -> x의 전염횟수 증가, y가 전염자됨
-            if(infected[x-1]==1 && con[x-1] < K){
-                con[x-1]++;
-                infected[y-1]=1;
+            if(infected[x]==1 && con[x] < K){
+                con[x]++;
+                infected[y]=1;
             }
             //y가 감염자일때 -> y의 전염횟수 증가, x가 전염자됨
-            if(infected[y-1]==1 && con[y-1] < K){
-                con[y-1]++;
-                infected[x-1]=1;
+            if(infected[y]==1 && con[y] < K){
+                con[y]++;
+                infected[x]=1;
             }
         }
 
