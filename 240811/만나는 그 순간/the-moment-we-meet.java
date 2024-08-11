@@ -70,6 +70,7 @@ public class Main {
                 time = i;
                 break;
             }
+            time = -1;
         }
         System.out.println(time);
         
