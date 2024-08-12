@@ -26,7 +26,7 @@ public class Main {
         char d = sc.next().charAt(0); //초기 구슬 이동방향
 
         int[] dx = new int[]{ 0, 1, -1, 0 }; //상 우 좌 하 
-        int[] dy = new int[]{ 1, 0, 0, 1 };
+        int[] dy = new int[]{ 1, 0, 0, -1 };
         
         int dir = getDir(d);
         for(int i=1; i<=t; i++){
