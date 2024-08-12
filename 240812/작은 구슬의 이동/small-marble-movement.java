@@ -25,7 +25,6 @@ public class Main {
         int c = sc.nextInt()-1; //초기 구슬 열 인덱스
         char d = sc.next().charAt(0); //초기 구슬 이동방향
 
-        int[][] space = new int[n][n];
         int[] dx = new int[]{ 0, 1, -1, 0 }; //상 우 좌 하 
         int[] dy = new int[]{ 1, 0, 0, 1 };
         
@@ -33,7 +32,7 @@ public class Main {
         for(int i=1; i<=t; i++){
             int nr = r + dy[dir];
             int nc = c + dx[dir];
-            if(inRange(nr, nc, n)==false) {
+            if( !inRange(nr, nc, n) ) {
                 dir = 3 - dir;
                 //i++; 
             } else {
