@@ -17,7 +17,8 @@ public class Main {
         int r = 0, c = 0;
         int dir = 0;
         char[] arr = new char[]{'A', 'B', 'C', 'D', 'E', 'F', 'G', 
-            'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'X', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+            'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 
+            'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
         
         //space[0][0] = arr[0];
         int nr = 0;
