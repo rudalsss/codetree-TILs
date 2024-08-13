@@ -18,19 +18,21 @@ public class Main {
         int dir = 0;
         char[] arr = new char[]{'A', 'B', 'C', 'D', 'E', 'F', 'G', 
             'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'X', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
-        space[0][0] = arr[0];
-        for(int i=1; i<n*m; i++){
-            int nr = r + dr[dir];
-            int nc = c + dc[dir];
+        //space[0][0] = arr[0];
+        int nr = 0;
+        int nc = 0;
+        for(int i=0; i<n*m; i++){
+            int index = i%26;
+            space[r][c] = arr[index];
+
+            nr = r + dr[dir];
+            nc = c + dc[dir];
             if( !inRange(nr, nc, n, m) || space[nr][nc]!=0 ){
                 dir = (dir+1)%4;
             }
 
             r += dr[dir];
             c += dc[dir];
-
-            int index = i%26;
-            space[r][c] = arr[index];
         }
 
         for(int i=0; i<n; i++){
