@@ -20,6 +20,7 @@ public class Main {
 
         int ans = -1;
         int time = 0;
+        outerLoop:
         for(int i=0; i<n; i++){
             char direction = sc.next().charAt(0);
             int dis = sc.nextInt();
@@ -31,7 +32,7 @@ public class Main {
                 y += dy[dir];
                 if(x==0 && y==0) {
                     ans = time;
-                    break;
+                    break outerLoop;
                 }
             }
         }
