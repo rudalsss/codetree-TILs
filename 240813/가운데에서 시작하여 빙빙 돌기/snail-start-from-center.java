@@ -25,7 +25,7 @@ public class Main {
             
             int nr = r + dr[dir];
             int nc = c + dc[dir];
-            if( !inRange(nr, nc, n) || changeCnt == cnt ){
+            if( !inRange(nr, nc, n) || changeCnt == cnt || space[nr][nc] !=0 ){
                 dir = (dir+1)%4;
                 nr = r + dr[dir];
                 nc = c + dc[dir];
