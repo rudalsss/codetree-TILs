@@ -12,8 +12,8 @@ public class Main {
         int r = n/2;
         int c = n/2;
 
-        int[] dr = new int[]{1, 0, -1, 0}; //하좌상우
-        int[] dc = new int[]{0, 1, 0, -1};
+        int[] dr = new int[]{0, -1, 0, 1}; //하좌상우
+        int[] dc = new int[]{1, 0, -1, 0};
 
         int[][] space = new int[n][n];
         int changeCnt = 0;
@@ -21,15 +21,17 @@ public class Main {
         space[r][c] = 1;
         int dir = 0;
         for(int i=2; i<=n*n; i++){
-            if(i%2==1) changeCnt++;
+            if(i%2==0) changeCnt++;
             
             int nr = r + dr[dir];
             int nc = c + dc[dir];
             if( !inRange(nr, nc, n) || changeCnt == cnt ){
                 dir = (dir+1)%4;
+                nr = r + dr[dir];
+                nc = c + dc[dir];
             }
-            r += dr[dir];
-            c += dc[dir];
+            r = nr;
+            c = nc;
 
             space[r][c] = i;
             cnt++;
