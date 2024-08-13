@@ -16,8 +16,9 @@ public class Main {
         char[][] space = new char[n][m];
         int r = 0, c = 0;
         int dir = 0;
-        char a = 'A';
-        space[0][0] = a;
+        char[] arr = new char[]{'A', 'B', 'C', 'D', 'E', 'F', 'G', 
+            'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'X', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+        space[0][0] = arr[0];
         for(int i=1; i<n*m; i++){
             int nr = r + dr[dir];
             int nc = c + dc[dir];
@@ -27,7 +28,9 @@ public class Main {
 
             r += dr[dir];
             c += dc[dir];
-            space[r][c] = (char)(a+i);
+
+            int index = i%26;
+            space[r][c] = arr[index];
         }
 
         for(int i=0; i<n; i++){
