@@ -25,7 +25,10 @@ public class Main {
                 dir = (dir+3)%4;
             }
 
-            if( x==0 && y==0 ) ans = i+1;
+            if( x==0 && y==0 ) {
+                ans = i+1;
+                break;
+            }
         }
         System.out.println(ans);
     }
