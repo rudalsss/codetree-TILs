@@ -57,11 +57,10 @@ public class Main {
             r = r + dr[dir];
             c = c + dc[dir];
 
-            if(space[r][c]=='/' && dir==2) dir = 3;
-            else if(space[r][c]=='/' && dir==3) dir =2;
-            else if(space[r][c]=='/' && dir==0) dir = 1;
-            else if(space[r][c]=='/' && dir==1) dir = 0;
-            else if(space[r][c]=='\\') dir = 3-dir;
+            if(space[r][c]=='/' && (dir==0||dir==2)) dir = (dir+1)%4;
+            else if(space[r][c]=='/' && (dir==1||dir==3)) dir = (dir+3)%4;
+            else if(space[r][c]=='\\' && (dir==1||dir==3)) dir = (dir+1)%4;
+            else if(space[r][c]=='\\' && (dir==0||dir==2)) dir = (dir+3)%4;
             cnt++;
         } while(r>=1 && r<=n && c>=1 && c<=n);
 
