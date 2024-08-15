@@ -41,10 +41,10 @@ public class Main {
         } else if(k>=2*n+1 && k<=3*n) {
             dir = 2; //상
             r = n+1;
-            c = -1*(k-3*n);
+            c = -1*(k-3*n) + 1;
         } else if(k>=3*n+1 && k<=4*n) {
             dir = 3;
-            r = -1*(k-4*n);
+            r = -1*(k-4*n) + 1;
             c = 0;
         }
 
