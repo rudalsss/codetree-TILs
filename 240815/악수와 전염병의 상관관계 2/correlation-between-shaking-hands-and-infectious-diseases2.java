@@ -22,9 +22,7 @@ public class Main {
             }
         }
         //입력값 정렬
-        for(int i=0; i<T; i++){
-            Arrays.sort( inputs, (a, b) -> Integer.compare(a[0], b[0]) ); //첫번째 열 기준
-        }
+        Arrays.sort( inputs, (a, b) -> Integer.compare(a[0], b[0]) ); //첫번째 열 기준
 
         
         for(int i=0; i<T; i++){
