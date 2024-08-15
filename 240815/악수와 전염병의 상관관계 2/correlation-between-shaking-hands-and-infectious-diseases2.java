@@ -32,12 +32,11 @@ public class Main {
             if(infected[x]==1 && con[x] < K){
                 con[x]++;
                 infected[y]=1;
-            }
-            //y가 감염자일때 -> y의 전염횟수 증가, x가 전염자됨
-            if(infected[y]==1 && con[y] < K){
+            } else if(infected[y]==1 && con[y] < K){
                 con[y]++;
                 infected[x]=1;
             }
+            //y가 감염자일때 -> y의 전염횟수 증가, x가 전염자됨
         }
 
         for(int i=0; i<N; i++) System.out.print(infected[i]);
