@@ -36,7 +36,7 @@ public class Main {
             c = k;
         } else if(k>=n+1 && k<=2*n) {
             dir = 1; //좌
-            r = k-(n+1);
+            r = k-n;
             c = n+1;
         } else if(k>=2*n+1 && k<=3*n) {
             dir = 2; //상
