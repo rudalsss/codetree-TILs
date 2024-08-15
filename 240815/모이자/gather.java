@@ -9,9 +9,9 @@ public class Main {
         int[] people = new int[n];
         for(int i=0; i<n; i++) people[i] = sc.nextInt();
 
-        int sumDiff = 0;
-        int min = 0;
+        int min = Integer.MAX_VALUE;
         for(int j=0; j<n; j++){
+            int sumDiff = 0;
             for(int i=0; i<n; i++){
                 sumDiff += people[i] * Math.abs(i-j);
             }
