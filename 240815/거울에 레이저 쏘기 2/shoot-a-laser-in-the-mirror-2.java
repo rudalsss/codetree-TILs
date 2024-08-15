@@ -18,12 +18,12 @@ public class Main {
                 space[i][j] = input[i-1].charAt(j-1);
             }
         }
-        for(int i=0; i<n+1; i++){
-            for(int j=0; j<n+1; j++){
-                System.out.print(space[i][j]+" ");
-            }
-            System.out.println();
-        }
+        // for(int i=0; i<n+1; i++){
+        //     for(int j=0; j<n+1; j++){
+        //         System.out.print(space[i][j]+" ");
+        //     }
+        //     System.out.println();
+        // }
         
         int r = 0;
         int c = 0;
@@ -42,7 +42,7 @@ public class Main {
             dir = 2; //상
             r = n+1;
             c = (k-3*n)*-1;
-        } else {
+        } else if(k>=3*n+1 && k<=4*n) {
             dir = 3;
             r = (k-4*n)*-1;
             c = 0;
