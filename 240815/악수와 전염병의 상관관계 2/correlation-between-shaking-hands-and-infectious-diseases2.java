@@ -29,7 +29,10 @@ public class Main {
             int x = inputs[i][1]-1;
             int y = inputs[i][2]-1;
             //x가 감염자일때 -> x의 전염횟수 증가, y가 전염자됨
-            if(infected[x]==1 && con[x] < K){
+            if(infected[x]==1 && con[x] < K && infected[y]==1 && con[y] < K){
+                con[x]++;
+                con[y]++;
+            } else if(infected[x]==1 && con[x] < K){
                 con[x]++;
                 infected[y]=1;
             } else if(infected[y]==1 && con[y] < K){
