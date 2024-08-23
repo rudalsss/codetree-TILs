@@ -34,7 +34,8 @@ public class Main {
 
         for(int i=0; i<n; i++){
             for(int j=0; j<=n-3; j++){
-                if( i!=x || j!=y ) sum2 = arr[i][j] + arr[i][j+1] + arr[i][j+2];
+                if( i==x && j!=y || i==x && j!=y+1 || i==x && j!=y+2 ) continue; //겹치는 경우
+                sum2 = arr[i][j] + arr[i][j+1] + arr[i][j+2];
                 max2 = Math.max(max2, sum2);
             }
         }
