@@ -74,6 +74,6 @@ public class Main {
         System.out.println(win);
         x++;
         y++;
-        System.out.println(x+" "+y);
+        if(win != 0) System.out.println(x+" "+y);
     }
 }
