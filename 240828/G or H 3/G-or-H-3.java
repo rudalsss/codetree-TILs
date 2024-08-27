@@ -18,16 +18,21 @@ public class Main {
         // place : 실제 위치에 점수반영해서 입력
         int m = 0;
         for(int i=0; i<n; i++) m = Math.max(location[i], m);
-        char[] place = new char[m+2]; //최대값만큼의 공간확보(0무시)
-        for(int i=0; i<n; i++) place[location[i]] = score[i];
+        int[] placeScore = new int[m+1]; //최대값만큼의 공간확보(0무시)
+        for (int i = 0; i < n; i++) {
+            if (score[i] == 'G') {
+                placeScore[location[i]] = 1;
+            } else if (score[i] == 'H') {
+                placeScore[location[i]] = 2;
+            }
+        }
 
 
         int maxScore = 0;
         for(int i=1; i<=m-k+1; i++){
             int sumScore = 0;
             for(int j=i; j<=i+k && j<=m; j++){
-                if(place[j]=='G') sumScore += 1;
-                if(place[j]=='H') sumScore += 2;
+                sumScore += placeScore[j];
             }
             maxScore = Math.max( sumScore, maxScore );
         }
