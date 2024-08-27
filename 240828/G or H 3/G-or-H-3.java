@@ -29,7 +29,7 @@ public class Main {
 
 
         int maxScore = 0;
-        for(int i=1; i<=m-k+1; i++){
+        for(int i=1; i<=m; i++){
             int sumScore = 0;
             for(int j=i; j<=i+k && j<=m; j++){
                 sumScore += placeScore[j];
