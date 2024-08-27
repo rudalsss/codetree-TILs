@@ -12,7 +12,7 @@ public class Main {
         for(int i=0; i<n; i++) nums[i] = sc.nextInt();
 
         int maxSum = 0;
-        for(int i=0; i<n-k; i++){
+        for(int i=0; i<=n-k; i++){
             int sum = 0;
             for(int j=i; j<i+k; j++) sum +=nums[j] ;
             maxSum = Math.max(sum, maxSum);  
