@@ -14,6 +14,7 @@ public class Main {
             score[i] = sc.next().charAt(0);
         }
 
+        // 최대위치값 구하여 place 만들
         // place : 실제 위치에 점수반영해서 입력
         int m = 0;
         for(int i=0; i<n; i++) m = Math.max(location[i], m);
@@ -22,9 +23,9 @@ public class Main {
 
 
         int maxScore = 0;
-        for(int i=1; i<=m-k; i++){
+        for(int i=1; i<=m-k+1; i++){
             int sumScore = 0;
-            for(int j=i; j<=i+k; j++){
+            for(int j=i; j<=i+k && j<=m; j++){
                 if(place[j]=='G') sumScore += 1;
                 if(place[j]=='H') sumScore += 2;
             }
